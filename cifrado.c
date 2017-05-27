@@ -16,7 +16,7 @@ int main(){
 	scanf("%d", &llave);
 
 	cifrado(cod, mensaje, llave);
-	printf("%s", cod);
+	printf("mensaje cifrado: %s", cod);
 	return(0);
 
 }
