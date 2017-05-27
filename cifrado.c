@@ -8,15 +8,15 @@ int main(){
 
 	char mensaje[TAMANO] = {0};
 	char cod[TAMANO] = {0};
-
-	printf("Ingrese un mensaje:  ");
+	printf("Cifrado ciclico \n");
+	printf("Ingrese un mensaje a cifrar:  ");
 	fgets(mensaje, 100, stdin);
-	printf("Ingrese la llave: ");
+	printf("Ingrese la llave numerica: ");
 	int llave;
 	scanf("%d", &llave);
 
 	cifrado(cod, mensaje, llave);
-	printf("mensaje cifrado: %s", cod);
+	printf("Mensaje cifrado: %s", cod);
 	return(0);
 
 }
