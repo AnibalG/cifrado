@@ -1,19 +1,17 @@
 #include <stdio.h>
-#include <string.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 #define TAMANO 1024
 
 void cifrado( char cod[], char mensaje[], int llave);
 void morse(char *cod[], char mensaje[]);
 int main(int argc, char **argv){
 	if(argc == 3){
-		printf("Cifrado Ciclico: ");
-		
+		printf("Cifrado Ciclico: \n");
        		char cod[TAMANO] ={0};
 
 		int llave = atoi(argv[1]);
 		cifrado(cod, argv[2], llave);
-        	printf("Mensaje cifrado: %s", cod);
+        	printf("Mensaje cifrado: %s\n", cod);
 		return (0);
 
 	}
