@@ -1,122 +1,124 @@
 #include <stdio.h>
 #include "codificacion.h"
 
-char *claveMorse(char* mensaje){
+char **claveMorse(char *mensaje){
+	char **cod = malloc(sizeof(mensaje));
+	
 	for(int i = 0; mensaje[i] != '\0'; i++){
 		char car = mensaje[i];
 		switch(car){
 			case 'A':
 			case 'a':
-				mensaje[i] = " .- ";
+				cod[i] = " .- ";
      				break;
 			case 'B':
                         case 'b':
-                                mensaje[i] = " -...";
+                                cod[i] = " -...";
                                 break;
 			case 'C':
                         case 'c':
-                                mensaje[i] = " -.-.";
+                                cod[i] = " -.-.";
                                 break;
 			case 'D':
                         case 'd':
-                                mensaje[i] = " -..";
+                                cod[i] = " -..";
                                 break;
 			case 'E':
                         case 'e':
-                                mensaje[i] = " .";
+                                cod[i] = " .";
                                 break;
 			case 'F':
                         case 'f':
-                                mensaje[i] = " ..-.";
+                                cod[i] = " ..-.";
                                 break;
 			case 'G':
                         case 'g':
-                                mensaje[i] = " --.";
+                                cod[i] = " --.";
                                 break;
 			case 'H':
                         case 'h':
-                                mensaje[i] = " ....";
+                                cod[i] = " ....";
                                 break;
 			case 'I':
                         case 'i':
-                                mensaje[i] = " ..";
+                                cod[i] = " ..";
                                 break;
                         case 'J':
                         case 'j':
-                                mensaje[i] = " .---";
+                                cod[i] = " .---";
                                 break;
                         case 'K':
                         case 'k':
-                                mensaje[i] = " -.-";
+                                cod[i] = " -.-";
                                 break;
                         case 'L':
                         case 'l':
-                                mensaje[i] = " .-..";
+                                cod[i] = " .-..";
                                 break;
                         case 'M':
                         case 'm':
-                                mensaje[i] = " --";
+                                cod[i] = " --";
                                 break;
                         case 'N':
                         case 'n':
-                                mensaje[i] = " -.";
+                                cod[i] = " -.";
                                 break;
                         case 'O':
                         case 'o':
-                                mensaje[i] = " ---";
+                                cod[i] = " ---";
                                 break;
                         case 'P':
                         case 'p':
-                                mensaje[i] = " .--.";
+                                cod[i] = " .--.";
                                 break;
 			case 'Q':
                         case 'q':
-                                mensaje[i] = " --.-";
+                                cod[i] = " --.-";
                                 break;
                         case 'R':
                         case 'r':
-                                mensaje[i] = " .-.";
+                                cod[i] = " .-.";
                                 break;
                         case 'S':
                         case 's':
-                                mensaje[i] = " ...";
+                                cod[i] = " ...";
                                 break;
                         case 'T':
                         case 't':
-                                mensaje[i] = " -";
+                                cod[i] = " -";
                                 break;
                         case 'U':
                         case 'u':
-                                mensaje[i] = " ..-";
+                                cod[i] = " ..-";
                                 break;
                         case 'V':
                         case 'v':
-                                mensaje[i] = " ...-";
+                                cod[i] = " ...-";
                                 break;
                         case 'W':
                         case 'w':
-                                mensaje[i] = " .--";
+                                cod[i] = " .--";
                                 break;
 			case 'X':
                         case 'x':
-                                mensaje[i] = " -..-";
+                                cod[i] = " -..-";
                                 break;
                         case 'Y':
                         case 'y':
-                                mensaje[i] = " -.--";
+                                cod[i] = " -.--";
                                 break;
                         case 'Z':
                         case 'z':
-                                mensaje[i] = " --..";
+                                cod[i] = " --..";
                                 break;
 			case ' ':
-                                mensaje[i] = " /";
+                                cod[i] = " /";
                                 break;
 
 
 		}
 	}
-	return mensaje;
+	return cod;
 
 
 }
