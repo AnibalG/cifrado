@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "codificacion.h"
 
 char **claveMorse(char *mensaje){
